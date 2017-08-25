@@ -251,7 +251,7 @@
   display: inline-block;
   font-weight: 300;
   font-family: "Josefin-sans";
-  /*linear gradient and transparent*/
+  opacity: 0.9;
   &.shadow {
     box-shadow: 0 9px 14px 0 rgba(248, 167, 67, 0.5);
   }
@@ -407,6 +407,7 @@
   display: inline-block;
   box-shadow: 0 9px 14px 0 rgba(248, 167, 67, 0.5);
   font-weight: 300;
+  opacity: 0.8;
 }
 
 .whyapple-bottom {
@@ -530,6 +531,7 @@
       font-weight: 400;
       font-family: "Josefin-sans";
       color: #FFFFFF;
+      opacity: 1;
     }
   }
 }
@@ -611,6 +613,7 @@
 
 .second-buynow-wrapper {
   text-align: center;
+  opacity: 0.95;
 }
 
 //MAIN END

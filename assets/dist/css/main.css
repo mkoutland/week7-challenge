@@ -258,7 +258,7 @@ table {
   display: inline-block;
   font-weight: 300;
   font-family: "Josefin-sans";
-  /*linear gradient and transparent*/ }
+  opacity: 0.9; }
   /* line 255, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .buynow-button.shadow {
     box-shadow: 0 9px 14px 0 rgba(248, 167, 67, 0.5); }
@@ -414,31 +414,32 @@ table {
   padding-right: 11px;
   display: inline-block;
   box-shadow: 0 9px 14px 0 rgba(248, 167, 67, 0.5);
-  font-weight: 300; }
+  font-weight: 300;
+  opacity: 0.8; }
 
-/* line 412, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 413, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .whyapple-bottom {
   width: 909px;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 417, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 418, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .bottom-content-wrapper {
   float: right;
   width: 496px;
   padding-right: 80px; }
 
-/* line 423, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 424, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .whyapple-headline .bottom {
   padding-top: 97px; }
 
-/* line 427, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 428, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .container.gallery {
   width: 1139px;
   margin-bottom: 109px;
   margin-top: 79px; }
 
-/* line 433, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 434, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .gallery-headline {
   font-size: 40px;
   font-weight: 600;
@@ -446,21 +447,21 @@ table {
   text-align: center;
   line-height: 48px; }
 
-/* line 441, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 442, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .columns-4 {
   float: left;
   padding-top: 70px; }
-  /* line 444, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 445, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .columns-4 .bitmap6 {
     padding-right: 71px; }
-  /* line 447, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 448, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .columns-4 .bitmap7 {
     padding-right: 60px; }
-  /* line 450, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 451, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .columns-4 .bitmap8 {
     padding-right: 62px; }
 
-/* line 455, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 456, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .updates {
   background-size: cover;
   background-position: center;
@@ -468,14 +469,14 @@ table {
   color: #FFFFFF;
   width: 100%; }
 
-/* line 463, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 464, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .bg {
   background-image: url(/assets/images/bitmap10.png); }
 
-/* line 468, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 469, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .bg-mask {
   position: relative; }
-  /* line 470, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 471, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .bg-mask:before {
     content: "";
     position: absolute;
@@ -485,12 +486,12 @@ table {
     bottom: 0;
     background: rgba(0, 0, 0, 0.7); }
 
-/* line 481, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 482, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .container.product-updates {
   z-index: 100;
   position: relative; }
 
-/* line 487, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 488, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .updates h3 {
   padding-bottom: 12px;
   color: #FFFFFF;
@@ -498,7 +499,7 @@ table {
   line-height: 37px;
   text-align: center; }
 
-/* line 494, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 495, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .updates p {
   padding-right: 30px;
   color: #FFFFFF;
@@ -506,13 +507,13 @@ table {
   line-height: 22px;
   text-align: center; }
 
-/* line 501, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 502, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .updates .input {
   margin-top: 30px;
   text-align: center;
   position: relative;
   font-weight: 400; }
-  /* line 506, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 507, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .updates .input input {
     height: 43px;
     border-top-left-radius: 40px;
@@ -530,7 +531,7 @@ table {
     color: #B7B7B7;
     font-weight: 400;
     padding-top: 3px; }
-  /* line 524, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 525, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .updates .input .input-btn {
     margin-left: -80px;
     box-shadow: none;
@@ -539,16 +540,17 @@ table {
     line-height: 19px;
     font-weight: 400;
     font-family: "Josefin-sans";
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    opacity: 1; }
 
-/* line 537, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 539, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .container.reviews {
   padding-bottom: 76px;
   width: 1121px;
   padding-top: 0px;
   margin-top: 75px; }
 
-/* line 544, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 546, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .review-headline {
   font-weight: 700;
   font-size: 40px;
@@ -557,26 +559,26 @@ table {
   color: #3C3C3C;
   padding-bottom: 70px; }
 
-/* line 553, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 555, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .column-3.review-col {
   text-align: center;
   width: 323px; }
 
-/* line 558, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 560, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .review-block {
   padding-top: 0;
   padding-bottom: 77px;
   width: 323px;
   line-height: 23px;
   font-weight: 500; }
-  /* line 564, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 566, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .review-block i {
     font-size: 40px;
     display: inline-block;
     margin-bottom: 20px;
     color: #FDA920; }
 
-/* line 572, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 574, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .review-content {
   font-family: "Lora";
   font-size: 14px;
@@ -584,15 +586,15 @@ table {
   font-weight: 500;
   line-height: 23px; }
 
-/* line 580, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 582, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .writer-info {
   margin-top: 30px; }
-  /* line 582, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 584, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   .writer-info img {
     border-radius: 50%;
     width: 46px; }
 
-/* line 588, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 590, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .writer-name {
   font-weight: 600;
   margin-top: 10px;
@@ -600,54 +602,55 @@ table {
   color: #242424;
   line-height: 22px; }
 
-/* line 596, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 598, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .ceo {
   font-size: 14px;
   font-weight: 300;
   color: #242424;
   line-height: 18px; }
 
-/* line 604, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 606, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .review-block.r2 {
   padding-left: 70px; }
 
-/* line 607, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 609, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .review-block.r3 {
   padding-left: 140px; }
 
-/* line 612, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 614, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .second-buynow-wrapper {
-  text-align: center; }
+  text-align: center;
+  opacity: 0.95; }
 
-/* line 620, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 623, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 footer {
   text-align: center;
   margin-bottom: 22px;
   background-color: #F4F4F4; }
-  /* line 624, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 627, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   footer nav {
     padding-top: 63px; }
-  /* line 627, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 630, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   footer .foot-name {
     font-family: "Josefin-sans";
     font-weight: 400;
     font-size: 13px; }
-  /* line 632, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 635, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   footer ul {
     padding-top: 20px;
     padding-bottom: 23px; }
-  /* line 636, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+  /* line 639, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
   footer li {
     display: inline;
     font-family: "Josefin-sans";
     font-weight: 600;
     font-size: 13px; }
 
-/* line 644, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 647, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .foot-about, .foot-services, .foot-contact {
   padding-left: 20px; }
 
-/* line 648, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 651, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .copyright {
   font-size: 11px;
   font-family: 'Josefin-sans';
@@ -655,6 +658,6 @@ footer {
   padding-bottom: 62px;
   letter-spacing: 2px; }
 
-/* line 656, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
+/* line 659, /Users/moutland/sites/week7-challenge/assets/src/scss/main.scss */
 .circle {
   font-size: 7px; }
