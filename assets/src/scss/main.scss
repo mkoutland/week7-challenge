@@ -1,22 +1,660 @@
-/**
- *
- * All scss here
- */
+@import '../../../node_modules/reset-css/_reset.scss';
 
-body {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  color: #2c3e50;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  margin: 0;
+//FONT START
+@font-face {
+  font-family: 'themefisher-font';
+  font-weight: 400;
+  src:  url('../../fonts/themefisher-font/themefisher-font.eot') format('eot'),
+  url('../../fonts/themefisher-font/themefisher-font.svg#themefisher-font') format('svg'),
+  url('../../fonts/themefisher-font/themefisher-font.woff') format('woff');
 }
 
-main {
-  margin: 40px auto 0;
-  max-width: 960px;
+
+
+@font-face {
+  font-family: 'Lora';
+  font-weight: 500;
+  src: url('../../fonts/lora/web-fonts/Lora Italic.woff2') format('woff2'), 
+  url('../../fonts/lora/web-fonts/Lora Italic.woff') format('woff'),
+  url('../../fonts/lora/web-fonts/Lora Italic.eot') format('eot'), 
+  url('../../fonts/lora/web-fonts/Lora Italic.svg#lora') format('svg'); 
+
+}
+
+@font-face {
+  font-family: 'Josefin-sans';
+  font-weight: 700;
+  src: url('../../fonts/josefin-sans/web-fonts/JosefinSansBold.eot') format('eot'),
+  url('../../fonts/josefin-sans/web-fonts/JosefinSansBold.svg#josefin-sans') format('svg'),
+  url('../../fonts/josefin-sans/web-fonts/JosefinSansBold.woff') format('woff'),
+  url('../../fonts/josefin-sans/web-fonts/JosefinSansBold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Josefin-sans';
+  font-weight: 600;
+  src: url('../../fonts/josefin-sans/web-fonts/josefinsansbolditalic.eot') format('eot'),
+  url('../../fonts/josefin-sans/web-fonts/josefinsansbolditalic.svg#josefin-sans') format('svg'),
+  url('../../fonts/josefin-sans/web-fonts/josefinsansbolditalic.woff') format('woff'),
+  url('../../fonts/josefin-sans/web-fonts/josefinsansbolditalic.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'Josefin-sans';
+  font-weight: 500;
+  src: url('../../fonts/josefin-sans/web-fonts/josefin regular sans italic.eot') format('eot'),
+  url('../../fonts/josefin-sans/web-fonts/josefin sans regular italic.svg#josefin-sans') format('svg'),
+  url('../../fonts/josefin-sans/web-fonts/josefin sans regular italic.woff') format('woff'),
+  url('../../fonts/josefin-sans/web-fonts/josefin sans regular italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Josefin-sans';
+  font-weight: 400;
+  src: url('../../fonts/josefin-sans/web-fonts/josefinsans.eot') format('eot'),
+  url('../../fonts/josefin-sans/web-fonts/josefinsans.svg#josefin-sans') format('svg'),
+  url('../../fonts/josefin-sans/web-fonts/josefinsans.woff') format('woff'),
+  url('../../fonts/josefin-sans/web-fonts/josefinsans.woff2') format('woff2');
+}
+
+
+@font-face {
+  font-family: 'Josefin-sans';
+  font-weight: 300;
+  src: url('../../fonts/josefin-sans/web-fonts/JosefinSansLight.eot') format('eot'),
+  url('../../fonts/josefin-sans/web-fonts/JosefinSansLight.svg#josefin-sans') format('svg'),
+  url('../../fonts/josefin-sans/web-fonts/JosefinSansLight.woff') format('woff'),
+  url('../../fonts/josefin-sans/web-fonts/JosefinSansLight.woff2') format('woff2');
+}
+
+
+
+.tf-strategy:before {
+  content: "\e03b";
+}
+
+.tf-ion-ios-briefcase-outline:before {
+  content: "\f3ed";
+}
+
+.tf-ion-quote:before {
+  content: "\f347";
+}
+
+.tf-mobile:before {
+  content: "\e000";
+}
+.tf-ion-ios-camera-outline:before {
+  content: "\f3f5";
+}
+
+.tf-ion-ios-cart-outline:before {
+  content: "\f3f7";
+}
+
+.tf-ion-camera:before {
+
+  content: "\f118";
+}
+
+.tf-ion-ios-camera-outline:before {
+  content: "\f3f5";
+}
+
+
+[class^="tf-"], [class*=" tf-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'themefisher-font' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+//FONT END
+
+* {
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+  }
+}
+
+.container {
+  font-family: "Josefin-sans";
+  font-weight: 400;
+  color: #000000;
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container--small {
+  max-width: 1002px;
+}
+
+//HEADER START
+
+.masthead {
+  padding-top: 10px;
+
+  ul {  
+    list-style: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding-top: 17px;
+    line-height: 16px;
+  }
+
+  li {
+    display: inline;
+  }
+}
+
+.masthead-inner {
+  display: flex;
+  align-items: center;
+}
+
+.masthead-primary, .masthead-secondary {
+  width: 50%;
+}
+
+.name {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 30PX;
+  text-decoration: none;
+}
+
+.masthead-secondary {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 80px;
+}
+
+.about, .services, .contact {
+  padding-left: 23px;
+}
+
+//HEADER END
+
+//MAIN START
+
+.column-3 {
+  width: 33.33%;
+  float: left;
+}
+
+#bitmap {
+  padding-top: 155px;
+  padding-left: 44px;
+}
+
+.column-twothirds {
+  width: 66.66%;
+  float: left;
+  color: #3B4045;
+  padding-top: 29px;
+}
+
+.twothirds-content {
+  padding-left: 97px;
+  padding-right: 60px;
+  color: #3B4045;
+}
+
+.column-twothirds {
+  h1 {
+    font-weight: 600;
+    font-size: 60px;
+    padding-bottom: 13px;
+    line-height: 72px;
+    padding-top: 151px;
+  }
+  p {
+    padding-bottom: 29px;
+    padding-right: 5px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+}
+
+.btn {
+  border-radius: 0;
+  outline: none;
+}
+
+.buynow-button {
+  background-color: #FEB648;
+  text-align: center;
+  width: 207px;
+  line-height: 22px;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: 1px;
+  border-radius: 30px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 5px;
+  padding-right: 4px;
+  display: inline-block;
+  font-weight: 300;
+  font-family: "Josefin-sans";
+  /*linear gradient and transparent*/
+  &.shadow {
+    box-shadow: 0 9px 14px 0 rgba(248, 167, 67, 0.5);
+  }
+}
+
+.container .corefeatures {
+  width: 1041px;
+}
+
+.column3-headline h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 62px;
+  padding-top: 74px;
+  line-height: 48px;
+}
+
+.column3-content1 {
+  padding-left: 30px;
+}
+
+.column-3 {
+  i {
+    font-size: 30px;
+    line-height: 30px;
+    font-family: "themefisher-font";
+    font-weight: 400;
+  }
+  .top {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 6px;
+    line-height: 24px;
+  }
+  .bottom {
+    padding-bottom: 33px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3B4045;
+    line-height: 22px;
+    padding-top: 3px;
+  }
+}
+
+.column3-content2 {
+  padding-bottom: 91px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+
+.column3-content3 {
+  padding-left: 40px;
+}
+
+.background-orange {
+  background-color: #FDA920;
+  background-size: cover;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#bitmap3 {
+  padding-top: 95px;
+  padding-bottom: 94px;
+  padding-left: 84px;
+  width: 226px;
+}
+
+.orange-wrapper {
+  color: #FFFFFF;
+  padding-top: 165px;
+}
+
+.orange-headline {
+  font-weight: 600;
+  width: 633px;
+  font-size: 40px;
+  line-height: 48px;
+  padding-bottom: 34px;
+  padding-left: 92px;
+}
+
+.orange-content {
+  font-weight: 300;
+  font-size: 18px;
+  width: 595px;
+  line-height: 22px;
+  padding-left: 95px;
+}
+
+.why-choose {
+  padding-top: 71px;
+  font-size: 40px;
+  font-family: "Josefin-sans";
+  font-weight: 600;
+  color: #3C3C3C;
+  text-align: center;
+  padding-bottom: 74px;
+}
+
+.container.apples {
+  max-width: 972px;
+}
+
+.whyapple-top {
+  width: 935px;
+  display: flex;
+  margin-left: 37px;
+}
+
+.top-image {
+  float: right;
+  padding-right: 102px;
+  width: 337px;
+}
+
+.top-content-wrapper {
+  float: left;
+}
+
+.whyapple-headline {
+  font-size: 32px;
+  padding-top: 94px;
+  font-weight: 400;
+  color: #3C3C3C;
+  padding-bottom: 18px;
+  line-height: 38px;
+}
+
+.whyapple-content {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3C3C3C;
+  line-height: 22px;
+  padding-bottom: 18px;
+}
+
+.check-btn {
+  background-color: #FEB648;
+  text-align: center;
+  width: 176px;
+  font-family: "Josefin-sans";
+  line-height: 19px;
+  color: #FFFFFF;
+  font-size: 16px;
+  border: 1px;
+  border-radius: 30px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-left: 12px;
+  padding-right: 11px;
+  display: inline-block;
+  box-shadow: 0 9px 14px 0 rgba(248, 167, 67, 0.5);
+  font-weight: 300;
+}
+
+.whyapple-bottom {
+  width: 909px;
+  display: flex;
+}
+
+.bottom-content-wrapper {
+  float: right;
+  width: 496px;
+  padding-right: 80px;
+}
+
+.whyapple-headline .bottom {
+  padding-top: 97px;
+}
+
+.container.gallery {
+  width: 1139px;
+  margin-bottom: 109px;
+  margin-top: 79px;
+}
+
+.gallery-headline {
+  font-size: 40px;
+  font-weight: 600;
+  color: #3C3C3C;
+  text-align: center;
+  line-height: 48px;
+}
+
+.columns-4 {
+  float: left;
+  padding-top: 70px;
+  .bitmap6 {
+    padding-right: 71px;
+  }
+  .bitmap7 {
+    padding-right: 60px;
+  }
+  .bitmap8 {
+    padding-right: 62px;
+  }
+}
+
+.updates {
+  background-size: cover;
+  background-position: center;
+  padding: 90px 0px;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.bg {
+  background-image: url(/assets/images/bitmap10.png);
+}
+
+
+.bg-mask {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.container.product-updates {
+  z-index: 100;
+  position: relative;
+}
+
+.updates {
+  h3 {
+    padding-bottom: 12px;
+    color: #FFFFFF;
+    font-size: 31px;
+    line-height: 37px;
+    text-align: center;
+  }
+  p {
+    padding-right: 30px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .input {
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+    font-weight: 400;
+    input {
+      height: 43px;
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      border: none;
+      box-shadow: none;
+      width: 310px;
+      margin-left: -65px;
+      position: relative;
+      z-index: 9999999999999999;
+      font-family: "Josefin-sans";
+      font-size: 14px;
+      line-height: 18px;
+      padding-left: 33px;
+      color: #B7B7B7;
+      font-weight: 400;
+      padding-top: 3px;
+    }
+    .input-btn {
+      margin-left: -80px;
+      box-shadow: none;
+      padding-left: 75px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+      font-family: "Josefin-sans";
+      color: #FFFFFF;
+    }
+  }
+}
+
+.container.reviews {
+  padding-bottom: 76px;
+  width: 1121px;
+  padding-top: 0px;
+  margin-top: 75px;
+}
+
+.review-headline {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #3C3C3C;
+  padding-bottom: 70px;
+}
+
+.column-3.review-col {
+  text-align: center;
+  width: 323px;
+}
+
+.review-block {
+  padding-top: 0;
+  padding-bottom: 77px;
+  width: 323px;
+  line-height: 23px;
+  font-weight: 500;
+  i {
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #FDA920;
+  }
+}
+
+.review-content {
+  font-family: "Lora";
+  font-size: 14px;
+  color: #777777;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.writer-info {
+  margin-top: 30px;
+  img {
+    border-radius: 50%;
+    width: 46px;
+  }
+}
+
+.writer-name {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #242424;
+  line-height: 22px;
+}
+
+.ceo {
+  font-size: 14px;
+  font-weight: 300;
+  color: #242424;
+  line-height: 18px;
+}
+
+.review-block {
+  &.r2 {
+    padding-left: 70px;
+  }
+  &.r3 {
+    padding-left: 140px;
+  }
+}
+
+.second-buynow-wrapper {
   text-align: center;
 }
 
-img {
-  max-width: 100%;
+//MAIN END
+
+//FOOTER START
+
+footer {
+  text-align: center;
+  margin-bottom: 22px;
+  background-color: #F4F4F4;
+  nav {
+   padding-top: 63px;
+ }
+ .foot-name {
+  font-family: "Josefin-sans";
+  font-weight: 400;
+  font-size: 13px;
 }
+ul {
+  padding-top: 20px;
+  padding-bottom: 23px;
+}
+li {
+  display: inline;
+  font-family: "Josefin-sans";
+  font-weight: 600;
+  font-size: 13px;
+}
+}
+
+.foot-about, .foot-services, .foot-contact {
+  padding-left: 20px;
+}
+
+.copyright {
+  font-size: 11px;
+  font-family: 'Josefin-sans';
+  font-weight: 400;
+  padding-bottom: 62px;
+  letter-spacing: 2px;
+}
+
+.circle {
+  font-size: 7px;
+}
+
+//FOOTER END

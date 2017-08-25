@@ -15,6 +15,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-util": "^3.0.7",
+    "reset-css": "^2.2.1",
     "run-sequence": "^1.2.1",
     "yargs": "^4.7.1"
   },
